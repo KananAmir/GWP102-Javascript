@@ -84,3 +84,13 @@ while (undefined) {
   a++;
   console.log("Hello World!");
 }
+
+// loop text letters
+
+let str = "lorem";
+
+let strLength = str.length;
+
+for (i = 0; i < strLength; i++) {
+  console.log(str[i]);
+}
