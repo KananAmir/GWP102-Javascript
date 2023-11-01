@@ -1,0 +1,50 @@
+
+I. question) Düzbucaqlı üçbucağın katetləri və hipotenuzunun uzunluğu verilib. 
+Verilən məlumatlara əsəsən bu üçbucağın düzbucaqlı üçbucaq olub olmadığını 
+yoxlayan proqram tərtib edin.
+
+Məsələn: katet1=3, katet2=4, hipotenuz=5 yazdıqda cavab bu şəkildə olmalıdır:
+
+Result: düzbucaqlı üçbucaqdır
+
+Məsələn: katet1=3, katet2=3, hipotenuz=8 yazdıqda cavab bu şəkildə olmalıdır:
+
+Result: düzbucaqlı üçbucaq deyil. 
+
+
+II. question) 3 rəqəmli hər hansı bir ədəd verilib. 
+Həmin ədədin hansı rəqəmlərdən ibarət olduğunu bizə qaytaran bir proqram tərtib edin. 
+Məsələn: number=652 daxil etdikdə  cavab bu şəkildə olmalıdır:
+
+Result: 6, 5, 2 
+
+
+III. question) Ayın adlarına uyğun olaraq neçə gündən ibarət olduğunu cavablandıran alqoritm tərtib edin. 
+Alqoritm  Switch Case  vasitəsi yazılsın. 
+
+Məsələn: month="january" dedikdə cavab "january has 31 days", 
+month="february" dedikdə cavab "february has 28 days" şəklində olsun
+
+
+
+IV. question) number type'lı bir dəyişən daxil edin. 
+Verilən rəqəmin tək və ya cüt olduğunu console'a çıxaran proqram tərtib edin.
+
+Məsələn: number = 15;
+Nəticə: 15 tək rəqəmdir
+
+Məsələn: number = 8;
+Nəticə: 8 cüt rəqəmdir
+
+
+V.question) Üçbücağın 3 tərəfi verilib. 
+Onların bərabərtərəfli üçbucaq olduğunu təyin edən proqram tərtib edin.
+
+
+VI. question) IV.question) Üçbücağın 3 tərəfi verilib. 
+Onların bərabəryanlı üçbucaq olduğunu təyin edən proqram tərtib edin.
+
+
+VII. question) 3 dəyişən daxil edin. 
+Bu ədədlərin üçbucağın tərəfi olub olmadığını yoxlayan proqram tərtib edin.
+
