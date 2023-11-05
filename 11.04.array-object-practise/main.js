@@ -1,3 +1,4 @@
+
 // Verilmiş array-in ən uzun sözünü ekrana çıxaran proqram yazın
 
 let array = [
@@ -20,7 +21,7 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-console.log(array[maxIndex]); // 9
+console.log(array[maxIndex]); // Micrasoft
 
 //object litheral
 let user = {
