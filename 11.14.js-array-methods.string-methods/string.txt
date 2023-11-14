@@ -10,9 +10,11 @@ endsWith
 trim (end, start)
 substring
 slice (negative)
+
 padStart/padEnd
 includes
 split
+
 replace
 replaceAll
 concat
