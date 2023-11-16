@@ -93,6 +93,16 @@ const users = [
 // 2.3.Sort users by age (ascending).
 // 2.4.Return new array, if user is male add in front of name 'Mr', or Ms. (e.g. name:'Mr Anar', 'Ms Aynure').
 
+console.log(
+  users.map((item) => {
+    if (item.gender === "male") {
+      return { ...item, name: `Mr. ${item.name}` };
+    } else {
+      return { ...item, name: `Mrs. ${item.name}` };
+    }
+  })
+);
+
 let employees = [
   {
     email: "alex@alex.com",
@@ -163,3 +173,9 @@ let employees = [
 ];
 
 //   Find the employee who has many skills in the employees object.
+
+// isLoggedIn true olanları array şəklində return edin
+
+// age'ə görə sort edin
+
+// Random 1 den 10 a qeder reqem generate edin ve sonra arrayda hemin reqemin olub olmamasini yoxlayin
