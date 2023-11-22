@@ -231,11 +231,15 @@ const users = [
   },
 ];
 
+let search = document.getElementById("search");
 let tBody = document.querySelector("tbody");
 
-users.forEach((element) => {
-  let trElem = document.createElement("tr");
-  trElem.innerHTML += `
+function drawTable(data) {
+  tBody.innerHTML = "";
+
+  data.forEach((element) => {
+    let trElem = document.createElement("tr");
+    trElem.innerHTML += `
             <td>${element.id}</td>
             <td>${element.username}</td>
             <td>${element.email}</td>
@@ -244,5 +248,26 @@ users.forEach((element) => {
             <td>${element.company.name}</td>
         `;
 
-  tBody.append(trElem);
+    tBody.append(trElem);
+  });
+}
+
+drawTable(users);
+
+search.addEventListener("keyup", function (event) {
+  // console.log(event.target.value);
+  let filteredUsers = users.filter((user) =>
+    user.username
+      .toLocaleLowerCase()
+      .includes(event.target.value.toLocaleLowerCase())
+  );
+
+  // console.log(filteredUsers);
+  drawTable(filteredUsers);
 });
+
+// let filtered = users.filter((item) =>
+//   item.username.toLocaleLowerCase().includes("Ki".toLocaleLowerCase())
+// );
+
+// drawTable(filtered);
