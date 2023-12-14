@@ -41,9 +41,34 @@ function drawTable(data) {
 }
 
 async function deleteSupplier(id, btn) {
-  if (confirm("are u sure to delete??")) {
-    btn.closest("tr").remove();
-    await axios.delete(`${BASE_URL}/suppliers/${id}`);
+  try {
+    if (confirm("are u sure to delete??")) {
+      let response = await axios.delete(`${BASE_URL}/suppliers/${id}`);
+
+      if (response.status === 200) {
+        btn.closest("tr").remove();
+        Toastify({
+          text: "Deleted Successfully!",
+          duration: 3000,
+          className: "info",
+          close: true,
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+        }).showToast();
+      }
+      console.log(response);
+    }
+  } catch (error) {
+    Toastify({
+      text: "Supplier not found",
+      duration: 3000,
+      close: true,
+      className: "info",
+      style: {
+        background: "linear-gradient(to right, red, yellow)",
+      },
+    }).showToast();
   }
 }
 

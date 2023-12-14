@@ -35,10 +35,42 @@ form.addEventListener("submit", function (event) {
   };
 
   if (!id) {
-    axios.post(`${BASE_URL}/suppliers`, supplier);
+    addSupplier(supplier);
   } else {
-    axios.patch(`${BASE_URL}/suppliers/${id}`, supplier);
+    updateSupplier(supplier);
   }
 
   allInputs.forEach((item) => (item.value = ""));
 });
+
+async function addSupplier(obj) {
+  try {
+    await axios.post(`${BASE_URL}/suppliers`, obj);
+    Toastify({
+      text: "Added Successfully!",
+      duration: 3000,
+      className: "info",
+      close: true,
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+    }).showToast();
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function updateSupplier(obj) {
+  try {
+    await axios.patch(`${BASE_URL}/suppliers/${id}`, obj);
+    Toastify({
+      text: "Updated Successfully!",
+      duration: 3000,
+      className: "info",
+      close: true,
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+    }).showToast();
+  } catch (error) {}
+}
