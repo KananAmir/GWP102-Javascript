@@ -14,7 +14,7 @@ async function getProducts() {
   const response = await axios(`${BASE_URL}/products`);
   //   console.log(response.data);
   productdCopy = response.data;
-  drawCards(response.data.splice(0, limit));
+  drawCards(response.data.slice(0, limit));
 }
 
 getProducts();
