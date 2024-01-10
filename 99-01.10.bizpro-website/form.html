@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+
+    <script defer src="./assets/js/add-product.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.png" alt="bizpro-logo" />
+          </a>
+          <nav>
+            <ul class="m-0">
+              <li>
+                <a href="index.html">HOME</a>
+              </li>
+              <li>
+                <a href="form.html">Add Product</a>
+              </li>
+              <li>
+                <a href="fav.html">Favorites</a>
+              </li>
+              <li>
+                <a href="#">PORTFOLIO</a>
+              </li>
+              <li>
+                <a href="#">BLOG</a>
+              </li>
+              <li>
+                <a href="#">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="add-product">
+      <div class="container">
+        <div class="add-product">
+          <form>
+            <input type="text" name="title" id="" placeholder="title" />
+            <input type="text" name="imgUrl" id="" placeholder="imgUrl" />
+            <input type="text" name="desc" id="" placeholder="desc" />
+            <button type="submit">ADD</button>
+          </form>
+          <h3 class="error">Butun fieldleri doldurun!!</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
