@@ -1,4 +1,7 @@
 const aboutCards = document.querySelector(".about-cards");
+const navBar = document.querySelector("nav");
+const menuIcon = document.querySelector(".fa-solid");
+const header = document.querySelector("header");
 
 let favProducts = getFavsFromLocaleStorage();
 let products = [];
@@ -75,3 +78,20 @@ function addToFav(id, icon) {
 
   setFavsToLocaleStorage(favs);
 }
+
+menuIcon.addEventListener("click", function () {
+  navBar.classList.toggle("show");
+  this.classList.contains("fa-bars")
+    ? (this.className = "fa-solid fa-x")
+    : (this.className = "fa-solid fa-bars");
+});
+
+window.addEventListener("scroll", function () {
+  header.classList.toggle("header-scroll", window.scrollY > 0);
+
+  // if (window.scrollY > 0) {
+  //   header.classList.add("header-scroll");
+  // } else {
+  //   header.classList.remove("header-scroll");
+  // }
+});
