@@ -4,8 +4,7 @@
       "id": 1,
       "title": "Web Development",
       "desc": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      "imgUrl": "https://preview.colorlib.com/theme/bizpro/images/logo/p4.png"
-      
+      "imgUrl": "https://preview.colorlib.com/theme/bizpro/images/logo/p4.png",
     },
     {
       "id": 3,
@@ -18,12 +17,8 @@
       "title": "Online Marketing",
       "desc": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
       "imgUrl": "https://preview.colorlib.com/theme/bizpro/images/logo/p4.png"
-    },
-    {
-      "title": "Nobis libero fugiat",
-      "imgUrl": "https://preview.colorlib.com/theme/bizpro/images/team/2.jpg",
-      "desc": "Sapiente in laboris ",
-      "id": 133
     }
-  ]
+  ],
+  "breakfast": [],
+  "brunch": []
 }
